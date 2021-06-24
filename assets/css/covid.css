@@ -195,6 +195,7 @@ iframe {
 }
 .main-nav .nav-current a {
 	color:#fff;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .main-nav a:hover {
 	color: #fff;
