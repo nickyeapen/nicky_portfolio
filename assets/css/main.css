@@ -1,0 +1,488 @@
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans);
+@import url(https://fonts.googleapis.com/css?family=Rubik);
+
+html {
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    line-height: 1.5;
+    color: #555;
+    font-family: 'Nunito Sans', sans-serif
+}
+
+footer,
+nav,
+section {
+    display: block
+}
+
+h1 {
+    margin: .67em 0;
+    font-size: 2.5rem;
+}
+
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects
+}
+
+img {
+    border-style: none
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+/*!
+ *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+
+@-webkit-keyframes pulse {
+
+    0%,
+    to {
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+        filter: alpha(opacity=40);
+        opacity: .4;
+        top: 0
+    }
+
+    50% {
+        -ms-filter: none;
+        -webkit-filter: none;
+        filter: none;
+        opacity: 1;
+        top: -10px
+    }
+}
+
+@keyframes pulse {
+
+    0%,
+    to {
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+        filter: alpha(opacity=40);
+        opacity: .4;
+        top: 0
+    }
+
+    50% {
+        -ms-filter: none;
+        -webkit-filter: none;
+        filter: none;
+        opacity: 1;
+        top: -10px
+    }
+}
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url(../fonts/fontawesome-webfont.eot?v=4.7.0);
+    src: url(../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0) format("embedded-opentype"), url(../fonts/fontawesome-webfont.woff2?v=4.7.0) format("woff2"), url(../fonts/fontawesome-webfont.woff?v=4.7.0) format("woff"), url(../fonts/fontawesome-webfont.ttf?v=4.7.0) format("truetype"), url(../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular) format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+
+.fa {
+    display: inline-block;
+    font: 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.fa-chevron-down:before {
+    content: "\f078"
+}
+
+.fa-github:before {
+    content: "\f09b"
+}
+
+.fa-envelope:before {
+    content: "\f0e0"
+}
+
+.fa-linkedin:before {
+    content: "\f0e1"
+}
+
+.fa-file:before {
+    content: "\f15b"
+}
+
+@font-face {
+    font-family: devicon;
+    src: url(../fonts/devicon.eot?-hdf3wh);
+    src: url(../fonts/devicon.eot?#iefix-hdf3wh) format("embedded-opentype"), url(../fonts/devicon.woff?-hdf3wh) format("woff"), url(../fonts/devicon.ttf?-hdf3wh) format("truetype"), url(../fonts/devicon.svg?-hdf3wh#devicon) format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+
+footer,
+nav,
+section {
+    display: block
+}
+
+h1,
+h3 {
+    margin-top: 1em;
+    padding-top: 1em;
+    line-height: 1.25;
+    color: #333
+}
+
+h3 {
+    font-size: 1.5rem
+}
+
+p {
+    margin: 1em 0
+}
+
+#particles-js {
+    background: #9b0202;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #252525, #0f0000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #252525, #0f0000);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    display: flex;
+    vertical-align: bottom;
+    width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed
+}
+
+.header {
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    margin: 0 auto;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+.header .site-title {
+    font-size: 35px;
+    display: block;
+    line-height: 1;
+    color: #fff;
+}
+
+@media only screen and (min-width:550px) {
+    .header .site-title {
+        margin: 0;
+        font-size: 100px
+    }
+}
+
+.header .site-description {
+    font-size: 20px;
+    display: block;
+    line-height: 1;
+    color: rgb(17, 87, 238);
+    margin-top: 10px
+}
+
+@media only screen and (min-width:550px) {
+    .header .site-description {
+        font-size: 40px
+    }
+}
+
+nav {
+    background-color: rgba(2, 0, 15, 0.493);
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 400px;
+    margin-right: 400px;
+    border-radius: 10px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    
+
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #61dafb;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+
+
+.header-icons {
+    display: flex;
+    justify-content: center;
+    text-align: center
+}
+
+.down,
+.header-icons .icon {
+    color: #fff;
+    text-align: center
+}
+
+.header-icons .icon {
+    height: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    transition: all .7s;
+    width: 20px;
+    font-size: 20px;
+    margin: 5px
+}
+.header-icons .icon {
+    height: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    transition: all .7s;
+    width: 20px;
+    font-size: 20px;
+    margin: 5px
+}
+
+.header-icons .icon:active,
+.header-icons .icon:hover {
+    color: #1488CC;
+    background: #fff
+}
+
+@media only screen and (min-width:550px) {
+    .header-icons .icon {
+        width: 35px;
+        height: 35px;
+        font-size: 35px
+    }
+}
+
+.down {
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    font-size: 30px;
+    cursor: pointer
+}
+
+.down .icon {
+    position: absolute;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    fill: #fff;
+    -webkit-animation: pulse 1.3s infinite;
+    animation: pulse 1.3s infinite
+}
+
+.down .icon:active,
+.down .icon:hover {
+    color: #4b5664
+}
+
+
+
+#about {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 960px
+}
+
+@media only screen and (min-width:550px) {
+    #about {
+        width: 80%
+    }
+}
+
+.user-details {
+    text-align: center;
+    margin: 5px auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto
+}
+
+@media only screen and (min-width:550px) {
+    #projects {
+        width: 80%
+    }
+}
+
+.user-projects {
+    margin: 20px auto
+}
+
+.user-projects img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px
+}
+
+.user-projects p {
+    margin-right: 5px
+}
+
+@media only screen and (min-width:550px) {
+    .contents {
+        margin-left: 0;
+        width: 48%
+    }
+
+    .contents {
+        margin-top: -5%
+    }
+
+    .images-right {
+        float: right;
+        width: 48%
+    }
+
+    .images-right img {
+        float: right
+    }
+}
+
+/* .project-link {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 5px;
+    color: #1488CC;
+    background-color: transparent;
+    border: 1px solid #1488CC;
+    border-radius: 10px;
+    text-align: center;
+    outline: 0;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color .3s ease-out, background-color .3s ease-out, border-color .3s ease-out
+} */
+
+.project-link:active,
+.project-link:hover {
+    background-color: #5347a8;
+    border-color: #5347a8;
+    color: #fff;
+    transition: color .3s ease-in, background-color .3s ease-in, border-color .3s ease-in
+}
+
+@media only screen and (min-width:550px) {
+    #projects {
+        width: 80%
+    }
+}
+
+.user-projects {
+    margin: 20px auto
+}
+
+.user-projects img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px
+}
+
+.user-projects p {
+    margin-right: 25px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+@media only screen and (min-width:550px) {
+    .contents {
+        margin-left: 0px;
+        width: 50%
+    }
+
+    .contents {
+        margin-top: -5%
+    }
+
+    .images-right {
+        float: right;
+        width: 48%
+    }
+
+    .images-right img {
+        float: right
+    }
+}
+
+.project-link {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 5px;
+    color: #1488CC;
+    background-color: transparent;
+    border: 1px solid #1488CC;
+    /* border-radius: 10px; */
+    text-align: center;
+    outline: 0;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color .3s ease-out, background-color .3s ease-out, border-color .3s ease-out
+}
+
+.project-link:active,
+.project-link:hover {
+    background-color: #5347a8;
+    border-color: #5347a8;
+    color: #fff;
+    transition: color .3s ease-in, background-color .3s ease-in, border-color .3s ease-in
+}
+
+.footer {
+    background: #161616;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #302d2d, #161616);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #302d2d, #161616);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 10px 0;
+    margin-top: 100px;
+    text-align: center;
+    color: #fff
+}
+
+
